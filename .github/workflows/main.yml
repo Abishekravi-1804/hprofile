@@ -60,8 +60,8 @@ jobs:
      
       - name: Update application.properties file 
         run: |
-          sed -i "s/^jdbc\.username=.*/jdbc.username=${{ secrets.DOCKER_USERNAME }}/" application.properties
-          sed -i "s/^jdbc\.password=.*/jdbc.password=${{ secrets.DOCKER_PASSWORD }}/" application.properties
+          sed -i "s/^jdbc\.username=.*/jdbc.username=${{ secrets.DOCKER_USERNAME }}/" src/main/resources/application.properties
+          sed -i "s/^jdbc\.password=.*/jdbc.password=${{ secrets.DOCKER_PASSWORD }}/" src/main/resources/application.properties
 
 
       - name: Login to DockerHub
@@ -75,6 +75,7 @@ jobs:
         with:
           context: .
           push: true
+          
           
          
 

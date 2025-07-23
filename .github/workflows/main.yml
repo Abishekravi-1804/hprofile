@@ -76,10 +76,7 @@ jobs:
           context: .
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/hprofile:latest 
-
-     
-          
-         
+               
   DEPLOY :
     needs: BUILD_AND_PUBLISH
     runs-on: ubuntu-latest 

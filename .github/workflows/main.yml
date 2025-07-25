@@ -8,7 +8,7 @@ env:
   ECS_SERVICE: vproapp-svc
   ECS_CLUSTER: vproapp1
   CONTAINER_NAME: hrpofile
-  ECS_TASK_DEFINITION: /aws-files/taskdeffile.json
+  ECS_TASK_DEFINITION: aws-files/taskdeffile.json
 
 jobs:
   Testing:

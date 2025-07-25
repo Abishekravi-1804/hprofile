@@ -3,7 +3,7 @@
     "containerDefinitions": [
         {
             "name": "hrpofile",
-            "image": "abishekravi123/hprofile:latest",
+            "image": "abishekravi123/hprofile",
             "cpu": 0,
             "portMappings": [
                 {

@@ -1,9 +1,9 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:ap-south-1:118500955144:task-definition/vproapp1:1",
+    "taskDefinitionArn": "arn:aws:ecs:ap-south-1:118500955144:task-definition/vproapp1:2",
     "containerDefinitions": [
         {
             "name": "hrpofile",
-            "image": "abishekravi123/hprofile",
+            "image": "abishekravi123/hprofile:1ea902f066b5d47ebe5cc47dbdfec2829beccc82",
             "cpu": 0,
             "portMappings": [
                 {
@@ -16,10 +16,8 @@
             ],
             "essential": true,
             "environment": [],
-            "environmentFiles": [],
             "mountPoints": [],
             "volumesFrom": [],
-            "ulimits": [],
             "logConfiguration": {
                 "logDriver": "awslogs",
                 "options": {
@@ -27,8 +25,7 @@
                     "awslogs-create-group": "true",
                     "awslogs-region": "ap-south-1",
                     "awslogs-stream-prefix": "ecs"
-                },
-                "secretOptions": []
+                }
             },
             "systemControls": []
         }
@@ -36,7 +33,7 @@
     "family": "vproapp1",
     "executionRoleArn": "arn:aws:iam::118500955144:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 1,
+    "revision": 2,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -73,7 +70,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2025-07-25T14:33:44.756Z",
+    "registeredAt": "2025-07-25T16:41:04.052Z",
     "registeredBy": "arn:aws:iam::118500955144:user/awscourseuser",
     "enableFaultInjection": false,
     "tags": []
